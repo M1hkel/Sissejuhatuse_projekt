@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Details</title>
+    <script>
+        // Use JavaScript to fetch the selected recipe based on the category and recipe name
+        // You can use the URL parameters 'category' and 'recipe' to determine which recipe to display
+        // For simplicity, I'm using hardcoded data here.
+        const category = new URLSearchParams(window.location.search).get("category");
+        const recipeName = new URLSearchParams(window.location.search).get("recipe");
+        const recipes = {
+            regular: {
+                "Recipe 1": "Recipe 1 Details...",
+                "Recipe 2": "Recipe 2 Details...",
+                "Recipe 3": "Recipe 3 Details...",
+            },
+            vegan: {
+                "Vegan Recipe 1": "Vegan Recipe 1 Details...",
+                "Vegan Recipe 2": "Vegan Recipe 2 Details...",
+                "Vegan Recipe 3": "Vegan Recipe 3 Details...",
+            },
+            budget: {
+                "Budget Recipe 1": "Budget Recipe 1 Details...",
+                "Budget Recipe 2": "Budget Recipe 2 Details...",
+                "Budget Recipe 3": "Budget Recipe 3 Details...",
+            },
+        };
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const recipeDetails = document.getElementById("recipe-details");
+            const recipeDescription = recipes[category][recipeName];
+
+            if (recipeDescription) {
+                recipeDetails.innerHTML = `<h1>${recipeName}</h1><p>${recipeDescription}</p>`;
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="recipe-details"></div>
+</body>
+</html>

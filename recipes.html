@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipes</title>
+    <script>
+        // Use JavaScript to fetch and display recipes based on the category
+        // You can use the URL parameter 'category' to determine which recipes to display
+        // For simplicity, I'm using hardcoded data here.
+        const category = new URLSearchParams(window.location.search).get("category");
+        const recipes = {
+            regular: ["Recipe 1", "Recipe 2", "Recipe 3"],
+            vegan: ["Vegan Recipe 1", "Vegan Recipe 2", "Vegan Recipe 3"],
+            budget: ["Budget Recipe 1", "Budget Recipe 2", "Budget Recipe 3"],
+        };
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const recipeList = document.getElementById("recipe-list");
+            const categoryRecipes = recipes[category];
+
+            if (categoryRecipes) {
+                categoryRecipes.forEach((recipe) => {
+                    const listItem = document.createElement("li");
+                    listItem.innerHTML = `<a href="recipe.html?category=${category}&recipe=${recipe}">${recipe}</a>`;
+                    recipeList.appendChild(listItem);
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <ul id="recipe-list"></ul>
+</body>
+</html>
