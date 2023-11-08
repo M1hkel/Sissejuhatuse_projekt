@@ -29,7 +29,36 @@
     </script>
 </head>
 <body>
-    <h1>Recipes</h1>
+    <h1></span>
+        <script type="text/javascript">
+            document.write("Our list of " + category + " recipes")
+        </script>
+    </h1>
+    <info>
+        <script>
+            if (category == 'regular') {
+                document.write(`
+                Kirjutame miks tasub neid retsepte proovida bla bla
+                <br>
+                mingi pilt
+                `)
+            }
+            if (category == 'vegan') {
+                document.write(`
+                See kategooria eksisteerib sest some people are vegan
+                <br>
+                mingi pilt (preferably selline mis on väga vegan)
+                `)
+            }
+            if (category == 'budget') {
+                document.write(`
+                These recipes are for you if you are a TÜ student or a hobo
+                <br>
+                mingi low budget pilt
+                `)
+            }
+        </script>
+    </info>
     <ul id="recipe-list"></ul>
 </body>
 </html>
