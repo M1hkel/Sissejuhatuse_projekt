@@ -8,7 +8,7 @@
 /* Apply a vintage background color */
 body {
     background-color: #f0e7db; /* A soft, aged yellowish background color */
-    font-family: 'Times New Roman', serif; /* A classic font reminiscent of the era */
+    font-family: 'Dubai', serif; /* Font */
     text-align: center;
 }
 
@@ -53,8 +53,15 @@ p {
     margin-top: 10px;
     line-height: 1.5;
 }
-
+p1 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: 700;
+}
 /* Add a subtle box-shadow for a vintage paper effect */
 #recipe-list, #recipe-details {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.119);
 }
