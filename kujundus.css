@@ -60,6 +60,14 @@ p1 {
     line-height: 1.5;
     font-weight: 700;
 }
+info {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: 700;
+    color:#716258;
+}
 /* Add a subtle box-shadow for a vintage paper effect */
 #recipe-list, #recipe-details {
     font-size: 20px;
