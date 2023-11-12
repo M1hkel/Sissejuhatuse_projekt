@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="kujundus.css">
     <title>Recipes</title>
+    <meta charset="UTF-8">
     <script>
         // Use JavaScript to fetch and display recipes based on the category
         // You can use the URL parameter 'category' to determine which recipes to display
@@ -29,32 +30,31 @@
     </script>
 </head>
 <body>
-    <table style="width:100%">
+    <table class="width100">
         <tr>
-            <td width="10%">
+            <td class="width10">
                 <img src="https://i.imgur.com/QlRTUqs.png" alt="logo" style="width:70px;height:70px;">
             </td>
-            <td width="20%">
-                <p1>
+            <td class="width20">
+                <p>
                     <a href="index.html">Back to main</a>
-                </p1>
+                </p>
             </td>
-            <td width="40%">
-                <h1></span>
-                    <script type="text/javascript">
+            <td class="width40">
+                <h1>
+                    <script>
                         document.write("Our list of " + category + " recipes")
                     </script>
                 </h1>
             </td>
-            <td width="20%">
+            <td class="width20">
 
             </td>
-            <td width="10%">
+            <td class="width10">
 
             </td>
         </tr>
     </table>    
-    <info>
         <script>
             if (category == 'regular') {
                 document.write(`
@@ -80,7 +80,6 @@
                 `)
             }
         </script>
-    </info>
     <ul id="recipe-list"></ul>
 </body>
 </html>

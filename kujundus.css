@@ -73,3 +73,16 @@ info {
     font-size: 20px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.119);
 }
+
+.width10 {
+    width: 10%;
+}
+.width20 {
+    width: 20%;
+}
+.width40 {
+    width: 40%;
+}
+.width100 {
+    width:100%
+}
