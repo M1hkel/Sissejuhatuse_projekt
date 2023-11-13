@@ -53,14 +53,14 @@ p {
     margin-top: 10px;
     line-height: 1.5;
 }
-p1 {
+.p1 {
     font-size: 25px;
     text-align: center;
     margin-top: 10px;
     line-height: 1.5;
     font-weight: 700;
 }
-info {
+.info {
     font-size: 22px;
     text-align: center;
     margin-top: 10px;
@@ -79,6 +79,7 @@ info {
 }
 .width20 {
     width: 20%;
+    text-align: center;
 }
 .width40 {
     width: 40%;
