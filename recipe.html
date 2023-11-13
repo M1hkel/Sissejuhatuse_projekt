@@ -5,9 +5,8 @@
     <title>Recipe Details</title>
     <meta charset="UTF-8">
     <script>
-        // Use JavaScript to fetch the selected recipe based on the category and recipe name
-        // You can use the URL parameters 'category' and 'recipe' to determine which recipe to display
-        // For simplicity, I'm using hardcoded data here.
+        // We'll use JavaScript to fetch the selected recipe based on the category and recipe name
+        // We'll use the URL parameters 'category' and 'recipe' to determine which recipe to display
         const category = new URLSearchParams(window.location.search).get("category");
         const recipeName = new URLSearchParams(window.location.search).get("recipe");
         const recipes = {
