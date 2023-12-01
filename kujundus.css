@@ -17,12 +17,16 @@ h1 {
     font-size: 36px;
     color: #8b4513; /* Saddle Brown text color */
     margin: 20px 0;
+    font-weight: 700;
 }
 
 /* Links styling */
 a {
     text-decoration: none;
     color: #8b4513; /* Saddle Brown text color for links */
+    font-size: 19px;
+    line-height: 1.2;
+    font-weight: 400;
 }
 
 a:hover {
@@ -33,32 +37,38 @@ a:hover {
 #recipe-list, #recipe-details {
     background-color: #fff; /* White background for recipe lists and details */
     margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #8b4513; /* Saddle Brown border */
+    padding: 30px;
+    padding-top: 10px;
+    border: 3px solid #8b4513; /* Saddle Brown border */
     border-radius: 10px;
-    width: 80%;
+    width: 60%;
 }
 
 /* Recipe list item styling */
 li {
-    list-style-type: square;
+    list-style-type: disc;
     font-size: 18px;
-    margin: 10px 0;
+    margin: 15px 0;
+    text-align: left;
+    font-weight: 400;
+    margin-left: 30px;
+    line-height: 1.2;
 }
 
 /* Recipe details styling */
 p {
-    font-size: 18px;
+    font-size: 19px;
     text-align: left;
     margin-top: 10px;
-    line-height: 1.5;
+    line-height: 1.2;
+    font-weight: 400;
 }
-.p1 {
-    font-size: 25px;
+.link1 {
+    font-size: 22px;
     text-align: center;
     margin-top: 10px;
     line-height: 1.5;
-    font-weight: 700;
+    font-weight: 600;
 }
 .info {
     font-size: 22px;
@@ -85,4 +95,38 @@ p {
 }
 .width100 {
     width:100%
+}
+
+dt {
+    font-size: 22px;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 2;
+    font-weight: 600;
+}
+dd {
+    font-size: 19px;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+img {
+    border: 3px solid #000000;
+    border-radius: 20px;
+}
+.upper-title {
+    font-size: 32px;
+    font-weight: 400;
+    color:#ba5d1a;
+    line-height: 0.5;
+}
+.centered {
+    text-align: center;
+    margin-left: 0%;
+    list-style-type: none;
+}
+.logo {
+    border: 0px;
+    border-radius: 0px;
 }
