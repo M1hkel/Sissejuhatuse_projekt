@@ -13,10 +13,19 @@
             regular: {
                 "Recipe 1": `Recipe 1
                 <br>
-                <img src="https://i.imgur.com/eeePleP.png" alt="Amazing recipes" style="width:480px;height:450px;">
+                <img src="https://i.imgur.com/eeePleP.png" alt="Amazing recipes" style="width:480px;height:450px;"></img>
                 `,
                 "Recipe 2": "Recipe 2 Details...",
-                "Recipe 3": "Recipe 3 Details...",
+                "Recipe 3": `
+                <h1>Chicken Burritos Recipe</h1>
+                <img src="https://i.imgur.com/rWDIbqd.png" alt="Everybody likes burritos" style="width:650px;height:500px;"</img>
+<p> <br><br>Savoring a plate of homemade grilled chicken and black bean burritos has an uncanny ability to uplift your day. The amalgamation of succulent grilled chicken, hearty black beans, and the medley of sautéed vegetables provides a comforting and fulfilling experience. The warmth of the flavorful spices and the textures of the ingredients create a sensory delight, offering a moment of respite and satisfaction. As you indulge in each bite, the wholesome combination of protein, fiber, and rich flavors not only satiates your hunger but also brings a sense of contentment. It's a simple yet profound pleasure, transforming an ordinary day into one punctuated with culinary joy and nourishment.<br><h1>Ingredients you will need</h1></p>
+<ul>    <li>1 lb boneless, skinless chicken breasts, diced</li>    <li>1 tablespoon olive oil</li>    <li>1 onion, finely chopped</li>    <li>2 cloves garlic, minced</li>    <li>1 bell pepper, diced</li>    <li>1 teaspoon ground cumin</li>    <li>1 teaspoon chili powder</li>    <li>1/2 teaspoon smoked paprika</li>    <li>Salt and pepper, to taste</li>    <li>1 can (15 oz) black beans, drained and rinsed</li>    <li>1 cup cooked rice (white or brown)</li>    <li>1 cup shredded cheddar cheese</li>    <li>1 cup salsa</li>    <li>1/2 cup sour cream</li>    <li>Fresh cilantro, chopped (for garnish)</li>    <li>4 large flour tortillas</li></ul>
+<h1>Let's start crafting this delightful dish!</h1>
+<dl>    <dt>1. Prep the Ingredients</dt>    <dd>Start by preparing all your ingredients. Dice the chicken into bite-sized pieces, chop the onion and bell pepper, mince the garlic, and gather the spices.</dd>    <dt>2. Cook the Chicken Filling</dt>    <dd>In a large skillet, heat olive oil over medium heat. Add the diced chicken, season with cumin, chili powder, smoked paprika, salt, and pepper. Cook until the chicken is browned and cooked through. Remove the chicken from the skillet and set it aside.</dd>    <dt>3. Sauté Vegetables</dt>    <dd>In the same skillet, add a bit more olive oil if needed. Sauté the chopped onion until it becomes translucent. Add the diced bell pepper and minced garlic, cooking until the vegetables are tender and fragrant.</dd>    <dt>4. Combine Chicken and Vegetables</dt>    <dd>Return the cooked chicken to the skillet with the sautéed vegetables. Mix well, allowing the flavors to meld. Add the drained black beans and stir until heated through.</dd>    <dt>5. Prepare the Burrito Components</dt>    <dd>Warm the flour tortillas in a dry skillet or microwave for about 20 seconds to make them pliable. Assemble your assembly line with the chicken filling, cooked rice, shredded cheddar cheese, salsa, and sour cream.</dd>    <dt>6. Assemble the Burritos</dt>    <dd>Lay out each tortilla and spoon a generous portion of the chicken and vegetable mixture onto the center. Add a layer of cooked rice, a dollop of salsa, a drizzle of sour cream, and a sprinkle of shredded cheddar cheese.</dd>    <dt>7. Roll the Burritos</dt>    <dd>To roll, fold in the sides of the tortilla and then fold up the bottom, tucking it tightly over the filling. Continue rolling until you have a neat and compact burrito.</dd>    <dt>8. Serve and Garnish</dt>    <dd>Place the rolled burritos seam-side down on a serving plate. Garnish with additional salsa, sour cream, and chopped fresh cilantro.</dd>    <dt>9. Enjoy your food :D</dt>    <dd>Your homemade chicken burritos are now ready to be enjoyed! Serve them with a side of guacamole, a squeeze of lime, or your favorite hot sauce for an extra kick.</dd></dl>
+<h1>Wrap-Up and Enjoy!</h1>                
+<p>These flavorful homemade burritos are perfect for a family dinner or casual get-together. Customize the ingredients to suit your taste preferences, and savor the delicious combination of seasoned chicken, veggies, and all the tasty toppings!</p>
+                `,
             },
             vegan: {
                 "Vegan Recipe 1": "Vegan Recipe 1 Details...",
@@ -35,7 +44,7 @@
             const recipeDescription = recipes[category][recipeName];
 
             if (recipeDescription) {
-                recipeDetails.innerHTML = `<h1>${recipeName}</h1><p>${recipeDescription}</p>`;
+                recipeDetails.innerHTML = `<h1 class="upper-title">${recipeName}</h1><p>${recipeDescription}</p>`;
             }
         });
     </script>
@@ -44,10 +53,10 @@
     <table class="width100">
         <tr>
             <td class="width10">
-                <img src="https://i.imgur.com/QlRTUqs.png" alt="logo" style="width:70px;height:70px;">
+                <img src="https://i.imgur.com/QlRTUqs.png" alt="logo" style="width:70px;height:70px;" class="logo"></img>
             </td>
             <td class="width20">
-                <p>
+                <p class="link1">
                     <a href="index.html">Back to main</a>
                 </p>
             </td>
@@ -55,7 +64,7 @@
                 <h1>Your recipe is right below</h1>
             </td>
             <td class="width20">
-                <p>(siia teised nupud, äkki dark/light theme)</p>
+                <p>(äkki mingi link eh?)</p>
             </td>
             <td class="width10">
 
