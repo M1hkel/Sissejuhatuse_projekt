@@ -5,8 +5,8 @@
     <title>Recipes</title>
     <meta charset="UTF-8">
     <script>
-        // We'll use JavaScript to fetch and display recipes based on the category
-        // We'll use the URL parameter 'category' to determine which recipes to display
+        // 
+        // Jagab retsepte kategooriateks, autor
         const category = new URLSearchParams(window.location.search).get("category");
         const recipes = {
             regular: ["Recipe 1", "Recipe 2", "Recipe 3"],
@@ -14,6 +14,8 @@
             budget: ["Budget Recipe 1", "Budget Recipe 2", "Budget Recipe 3"],
         };
 
+        // loome raami (css fail kasutusel) ning loome link-nuppusid iga sõnastikus oleva järjendi (regular, vegan, budget) elemendi jaoks, et see link viiaks recipe.html peale
+        // autor
         document.addEventListener("DOMContentLoaded", function () {
             const recipeList = document.getElementById("recipe-list");
             const categoryRecipes = recipes[category];
@@ -56,7 +58,7 @@
     </table>    
 
     <div id="recipe-list">
-        <script> // kuvab erinevat sisu sõltuvalt kategooriast (ehk retsepti tüübist), autor Andrei
+        <script>             // kuvab erinevat sisu sõltuvalt kategooriast (ehk retsepti tüübist), autor Andrei
             if (category == 'regular') {
                 document.write(`
                 <h1>Regular Recipes</h1>
