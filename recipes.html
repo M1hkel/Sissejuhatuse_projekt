@@ -32,17 +32,17 @@
     <table class="width100">
         <tr>
             <td class="width10">
-                <img src="https://i.imgur.com/QlRTUqs.png" alt="logo" style="width:70px;height:70px;">
+                <img src="https://i.imgur.com/QlRTUqs.png" alt="logo" style="width:70px;height:70px;" class="logo"></img>
             </td>
             <td class="width20">
-                <p>
+                <p class="link1">
                     <a href="index.html">Back to main</a>
                 </p>
             </td>
             <td class="width40">
                 <h1>
                     <script>
-                        document.write("Our list of " + category + " recipes")
+                        document.write("Explore our " + category + " recipes")
                     </script>
                 </h1>
             </td>
@@ -54,31 +54,40 @@
             </td>
         </tr>
     </table>    
+
+    <div id="recipe-list">
         <script>
             if (category == 'regular') {
                 document.write(`
-                Kirjutame miks tasub neid retsepte proovida bla bla
-                <br><br>
-                <img src="https://i.imgur.com/eeePleP.png" alt="Amazing recipes" style="width:480px;height:450px;">
+                <h1>Regular Recipes</h1>
+                <p>Welcome to our special kitchen place! Here, you can find regular recipes to make your meals extra special. Our recipes use all kinds of ingredients to make tasty dishes that you can enjoy.Some of these recipes might have things that are not for vegetarians. If you're someone who doesn't eat meat, check our <a href="recipes.html?category=vegan">Vegan Recipes</a> list. There, you can find recipes that fit your taste!No matter if you're really good at cooking or just starting, our recipes are made to be easy for everyone. Each dish is like a blank paper where you can add your own ideas. We hope you join us in making and enjoying these meals. Whether it's a big family meal or just for yourself, our recipes can make your cooking time happy and fun. Let's start our cooking adventure and make every meal a special one!<p>
+                <br>
+                <img src="https://i.imgur.com/eeePleP.png" alt="Amazing recipes" style="width:480px;height:450px;" class="centered"></img>
+                <br>
+                <h1>The list of recipes</h1>
                 `)
             }
             if (category == 'vegan') {
                 document.write(`
-                See kategooria eksisteerib sest some people are vegan
+                <h1>Vegan Recipes</h1>
+                <p>Here we have listed recipes for you in case you are a vegan<p>
                 <br>
-                mingi pilt (preferably selline mis on väga vegan)
+                <img src="https://i.imgur.com/eeePleP.png" alt="Amazing recipes" style="width:480px;height:450px;" class="centered"></img>
+                <br>
+                <h1>The list of recipes</h1>
                 `)
             }
             if (category == 'budget') {
                 document.write(`
-                These recipes are for you if you are a TÜ student or a hobo
-                <br>
-                mingi low budget pilt
+                <h1>Budget Recipes</h1>
+                <p>Here we have listed recipes for you in case you don't have much money<p>
                 <br>
                 <img src="https://i.imgur.com/Pn8rGK5.png" alt="Budget recipes" style="width:480px;height:450px;">
+                <br>
+                <h1>The list of recipes</h1>
                 `)
             }
         </script>
-    <ul id="recipe-list"></ul>
+    </div>
 </body>
 </html>
