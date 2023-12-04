@@ -5,8 +5,8 @@
     <title>Recipe Details</title>
     <meta charset="UTF-8">
     <script>
-        // We'll use JavaScript to fetch the selected recipe based on the category and recipe name
-        // We'll use the URL parameters 'category' and 'recipe' to determine which recipe to display
+        // autor 
+        // Vastavalt valitud kategooriale võtame sõnastikust vastava sisu, nt kui kasutaja valis Regular > Recipe 3, siis talle kuvab vastavat sisu
         const category = new URLSearchParams(window.location.search).get("category");
         const recipeName = new URLSearchParams(window.location.search).get("recipe");
         const recipes = {
